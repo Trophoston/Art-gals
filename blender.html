@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art Gallery</title>
+  <link rel="stylesheet" href="./framework/boostrap/bootstrap.min.css">
+  <link href="./framework/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body >
+
+  <div class="loader"></div>
+  <div class="backler"></div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top no-select no-drag" style="background-color: #1B262C; width: 100vw;">
+    <div class="container">
+        <a class="navbar-brand me-4" href="#">
+            <img src="./htmlalluse/logoteacher.jpg" alt="Logo" width="35" height="35" class="d-inline-block align-text-top">
+            Art Gallery
+        </a>
+        <button  class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link "  href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="picasso.html?#">Picasso</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="opart.html?#">Op art</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="krajang.html?#">กระจัง</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page"  href="blender.html?#">ประฎิมากรรม</a>
+            </li>
+        </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+  <!-- Header -->
+  <header>
+    <div class="jumbotron position-relative">
+      <div class="position-absolute basns">
+        <div class=" thatext " >
+          <h1 class="ft-56" style="font-family: Petit; " data-aos="fade-left">Welcome to</h1>
+          <p class="ft-96" style="font-family: Noto; " data-aos="fade-left" data-aos-duration="700"> Art Gallery</p>
+          <p class="ft-309" style="font-family: Kanit; " data-aos="fade-left" data-aos-duration="900">309</p>
+        </div>
+        <img src="./htmlalluse/awdawdadteachis.png" class=" immage " alt="Responsive image" data-aos="fade-right">
+      </div>
+    </div>
+  </header>
+
+    <!-- Gallery -->
+    <section class="container" id="gallerySection">
+    
+    <h1 class="text-center my-4"><b>ประฎิมากรรม</b></h1>
+
+    <div class="d-flex w-100 justify-content-between flex-wrap">
+      <button type="button" class="btn btn-dark mb-1" id="liveToastBtn" data-aos="fade-right"> กดเพื่ออ่านเกณฑ์การให้คะแนน</button>
+
+    <form action="index.html#" id="searchForm" class="dropdown-item d-flex my-1 gap-1" style="width: 230px;" data-aos="fade-right">
+      <input id="searchInput" class="form-control no-select no-drag" type="number" placeholder="ค้นหาเลขที่" aria-label="default input example" autocomplete="off" min="1" max="45">
+      <button type="submit" class="btn btn-primary ">Submit</button>
+    </form>
+    </div>
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3 no-select no-drag" >
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+    <div class="toast-header">
+      <strong class="me-auto">เกณฑ์การให้คะแนน</strong>
+      <small>รวม 25points</small>
+      <button type="button" class="btn-close redclose" data-bs-dismiss="toast" aria-label="Close" ></button>
+    </div>
+    <div class="toast-body d-flex justify-content-between " style="background-color: #ffffffa1;">
+          <small>
+            1.ความสวยงาม(การลงสีที่เรียบเนียน)<br>
+            2.ความเรียบร้อย<br>
+            3.แนวคิดที่น่าสนใจและสร้างสรรค์<br>
+            4.ความน่าสนใจของผลงาน(ลกษณะที่โดดเด่น)<br>
+            5.ความสมบูรณ์ของผลงาน<br>
+          </small>
+          <small>
+            5points<br>
+            4points<br>
+            6points<br>
+            4points<br>
+            6points<br>
+          </small>
+        
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+  
+      <div class="card px-3 py-2 my-4 " data-aos="fade-up">
+        <p class="text-center h4 m-0" >Most popular art</p> 
+    </div>
+
+
+      <div class="row mx-1">
+        
+    <div class="col-md-4 col-xxl-3" data-aos="fade-left">
+      <div class="card mb-4 shadow-sm" >
+        <img src="./blender/7.jpg" class="card-img-top modal-image" alt="" id="myImg1" style="width: 100%; height: auto;"> 
+        <div class="card-footer">
+        <small class="text-body-secondary " id="4">1.ฐิติวรดา	ตานะ เลขที่ 4</small><br>
+        <small class="text-body-secondary " id="14">2.สิริปรียา	วงค์คำมูล เลขที่ 14</small><br>
+        <small class="text-body-secondary " id="21">3.พิชญธิดา	บุญเปี่ยมเลิศ เลขที่ 21</small><br>
+        <small class="text-body-secondary " id="26">4.สิปราง	วงศ์สิทธิพิศาล เลขที่ 26</small><br>
+        <small class="text-body-secondary " id="42">5.นวนันท์	กฤตธนานันท์ เลขที่ 42</small><br>
+        <small class="text-body-secondary " id="43">6.สมิตานันท์	แก้วมา เลขที่ 43</small><br>
+      </div>
+      </div>
+    </div>
+      </div>
+  
+        
+        <div class="card px-3 py-2 my-4 " data-aos="fade-up">
+          <p class="text-center h4 m-0" >Others works</p>
+      </div>
+      
+      <div class="row  mx-1 " data-aos="fade-left">
+        
+        <div class="col-md-4 col-xxl-3" data-aos="fade-left">
+          <div class="card mb-4 shadow-sm" >
+            <img src="./blender/1.jpg" class="card-img-top modal-image" alt="" id="myImg1" style="width: 100%; height: auto;"> 
+            <div class="card-footer">
+            <small class="text-body-secondary " id="2">1.จีรภัทร	วงศ์ศิริวิวัฒน์ เลขที่ 2</small><br>
+            <small class="text-body-secondary" id="3">2.ภูษณิศา	นิ่มเจริญดี เลขที่ 3</small><br>
+            <small class="text-body-secondary" id="8">3.พรไพลิน	สมุทรีรัมย์ เลขที่ 8</small><br>
+            <small class="text-body-secondary" id="22">4.พิชญา	พิทักษ์ เลขที่ 22</small><br>
+            <small class="text-body-secondary" id="22">5.ปภัสสร	หว่าหลิ่งต๊ะ เลขที่ 31</small><br>
+            <small class="text-body-secondary" id="35">6.วรรณศิลป์	แชโต เลขที่ 35</small><br>
+            <small class="text-body-secondary" id="45">7.พัชรกันย์	ปินตา เลขที่ 45</small><br>
+          </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-xxl-3" >
+        <div class="card mb-4 shadow-sm" >
+          <img src="./blender/2.jpg" class="card-img-top modal-image" alt="" id="myImg1" style="width: 100%; height: auto;"> 
+          <div class="card-footer">
+          <small class="text-body-secondary " id="6">1.วีรวิชญ์	สงค์ประเสริฐ เลขที่ 6</small><br>
+          <small class="text-body-secondary" id="10">2.ณัฐวุฒิ	นิธิอุดมฤทธิ์ เลขที่ 10</small><br>
+          <small class="text-body-secondary" id="30">3.เอกภวิษย์	สันบุญเป็ง เลขที่ 30</small><br>
+          <small class="text-body-secondary" id="32">4.ชาญประวิทย์	พิบูลอาลักษณ์ เลขที่ 32</small><br>
+          <small class="text-body-secondary" id="36">5.ริชชขวัญ	หมื่นณรงค์ เลขที่ 36</small><br>
+          <small class="text-body-secondary" id="38">6.ภูวนัส	วิริญานนท์ เลขที่ 38</small><br>
+        </div>
+        </div>
+      </div>
+
+    
+
+  <div class="col-md-4 col-xxl-3" >
+      <div class="card mb-4 shadow-sm" >
+        <img src="./blender/5.jpg" class="card-img-top modal-image" alt="" id="myImg1" style="width: 100%; height: auto;"> 
+        <div class="card-footer">
+        <small class="text-body-secondary " id="5">1.สุวิชาดา	จันทร์เป็ง เลขที่ 5</small><br>
+        <small class="text-body-secondary " id="15">2.ดนิสา	พชรพิพัฒน์ เลขที่ 15</small><br>
+        <small class="text-body-secondary " id="16">3.วีร์รดา	แก้วกันใจ เลขที่ 16</small><br>
+        <small class="text-body-secondary " id="17">4.เมลาณี	เฟื่องเพียร เลขที่ 17</small><br>
+        <small class="text-body-secondary " id="18">5.อาทิตยา	ธีโรภาส เลขที่ 18</small><br>
+        <small class="text-body-secondary " id="19">6.นภัชพร	บัวลอย เลขที่ 19</small><br>
+        <small class="text-body-secondary " id="20">7.นภษภร	ศักดิ์ทอง เลขที่ 20</small><br>
+        <small class="text-body-secondary " id="40">8.วาณิชการ	ใหม่อารินทร์ เลขที่ 40</small><br>
+      </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-xxl-3" >
+      <div class="card mb-4 shadow-sm" >
+        <img src="./blender/6.jpg" class="card-img-top modal-image" alt="" id="myImg1" style="width: 100%; height: auto;"> 
+        <div class="card-footer">
+        <small class="text-body-secondary " id="9">1.พัณณิตา	จุมดวง เลขที่ 9</small><br>
+        <small class="text-body-secondary " id="12">2.ลมัทณา	ศรีธนูชัย เลขที่ 12</small><br>
+        <small class="text-body-secondary " id="24">3.ณัฐวุฒิ	ขาวคม เลขที่ 24</small><br>
+        <small class="text-body-secondary " id="29">4.จารุพิชญา	คำลือ เลขที่ 29</small><br>
+        <small class="text-body-secondary " id="34">5.อัจจิมา	ปันธนนันท์ เลขที่ 34</small><br>
+        <small class="text-body-secondary " id="41">6.สิริรัตน์	สีพรรณ์ เลขที่ 41</small><br>
+      </div>
+      </div>
+    </div>
+
+    
+    <div class="col-md-4 col-xxl-3">
+      <div class="card mb-4 shadow-sm" >
+        <img src="./blender/3.jpg" class="card-img-top modal-image" alt="" id="myImg1" style="width: 100%; height: auto;"> 
+        <div class="card-footer">
+        <small class="text-body-secondary " id="11">1.ชัยวัฒน์	ฝั้นอ้าย เลขที่ 11</small><br>
+        <small class="text-body-secondary " id="13">2.คุณานนต์	ใจคำ เลขที่ 13</small><br>
+        <small class="text-body-secondary " id="25">3.ชยกร	วิบุลกิติ์ เลขที่ 25</small><br>
+        <small class="text-body-secondary " id="28">4.กานต์	ดำมี เลขที่ 28</small><br>
+        <small class="text-body-secondary " id="37">5.ปฏิภาณ	มูชัย เลขที่ 37</small><br>
+        <small class="text-body-secondary " id="39">6.จิรวศิน	พรหมมินทร์ เลขที่ 39</small><br>
+      </div>
+      </div>
+    </div>
+
+
+          <div class="col-md-4 col-xxl-3">
+      <div class="card mb-4 shadow-sm" >
+        <img src="./blender/4.jpg" class="card-img-top modal-image" alt="" id="myImg1" style="width: 100%; height: auto;"> 
+        <div class="card-footer">
+        <small class="text-body-secondary " id="1">1.พริษฐ์พงศ์	ชุ่มชื่น เลขที่ 1</small><br>
+        <small class="text-body-secondary " id="7">2.ณัฐดนย์	ปัญญาเเม เลขที่ 7</small><br>
+        <small class="text-body-secondary " id="23">3.ยินดี	สืบทายาท เลขที่ 23</small><br>
+        <small class="text-body-secondary " id="27">4.ธัญกันณ์ จอมชาญพันธ์ เลขที่ 27</small><br>
+        <small class="text-body-secondary " id="33">5.ธีระกรินทร์	ทองเพ็ญ เลขที่ 33</small><br>
+        <small class="text-body-secondary " id="44">6.ศุภกฤษ์	ทิพย์เดโช เลขที่ 44</small><br>
+      </div>
+      </div>
+    </div>
+
+
+    
+
+
+      </div>
+  
+    </section>
+  
+    <!-- Footer -->
+    
+
+    <footer class="footer py-4" >
+      <div class="container">
+        <span class="">เว็บไซต์นี้จัดทำโดยนักเรียนชั้น ม.3 ห้อง 9</span><br>
+        <a href="https://www.yupparaj.ac.th" target="_blank" class="text-light">โรงเรียนยุพราชวิทยาลัย</ฟ>
+      </div>
+    </footer>
+  
+  
+    <script src="./framework/dist/aos.js"></script>
+    <script src="./framework/boostrap/bootstrap.bundle.js"></script>
+    <script src="blender.js"></script>
+    <script src="script.js"></script>
+  
+  </body>
+  </html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art Gallery</title>
+  <link rel="stylesheet" href="./framework/boostrap/bootstrap.min.css">
+  <link href="./framework/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body >
+
+  <div class="loader"></div>
+  <div class="backler"></div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top no-select no-drag" style="background-color: #1B262C; width: 100vw;">
+    <div class="container">
+        <a class="navbar-brand me-4" href="#">
+            <img src="./htmlalluse/logoteacher.jpg" alt="Logo" width="35" height="35" class="d-inline-block align-text-top">
+            Art Gallery
+        </a>
+        <button  class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link "  href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="picasso.html?#">Picasso</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="opart.html?#">Op art</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="krajang.html?#">กระจัง</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="blender.html?#">ประฎิมากรรม</a>
+            </li>
+        </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+  <!-- Header -->
+  <header>
+    <div class="jumbotron position-relative">
+      <div class="position-absolute basns">
+        <div class=" thatext " >
+          <h1 class="ft-56" style="font-family: Petit; " data-aos="fade-left">Welcome to</h1>
+          <p class="ft-96" style="font-family: Noto; " data-aos="fade-left" data-aos-duration="700"> Art Gallery</p>
+          <p class="ft-309" style="font-family: Kanit; " data-aos="fade-left" data-aos-duration="900">309</p>
+        </div>
+        <img src="./htmlalluse/awdawdadteachis.png" class=" immage " alt="Responsive image" data-aos="fade-right">
+      </div>
+    </div>
+  </header>
+
+    <!-- Gallery -->
+    <section class="container" id="gallerySection">
+    
+    <h1 class="text-center my-4"><b>กระจัง</b></h1>
+
+    <div class="d-flex w-100 justify-content-between flex-wrap">
+      <button type="button" class="btn btn-dark mb-1" id="liveToastBtn" data-aos="fade-right"> กดเพื่ออ่านเกณฑ์การให้คะแนน</button>
+
+    <form action="index.html#" id="searchForm" class="dropdown-item d-flex my-1 gap-1" style="width: 230px;" data-aos="fade-right">
+      <input id="searchInput" class="form-control no-select no-drag" type="number" placeholder="ค้นหาเลขที่" aria-label="default input example" autocomplete="off" min="1" max="45">
+      <button type="submit" class="btn btn-primary ">Submit</button>
+    </form>
+    </div>
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3 no-select no-drag" >
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+    <div class="toast-header">
+      <strong class="me-auto">เกณฑ์การให้คะแนน</strong>
+      <small>รวม 30points</small>
+      <button type="button" class="btn-close redclose" data-bs-dismiss="toast" aria-label="Close" ></button>
+    </div>
+    <div class="toast-body d-flex justify-content-between " style="background-color: #ffffffa1;">
+          <small>
+            1.เทคนิคการใช้สี<br>
+            2.ความคิดสร้างสรรค์ <br>
+            3.ความสวยงามและการตกแต่ง<br>
+            4.ความประณีต/ความเป็นระเบียบ<br>
+            5.มีการตัดเส้น<br>
+            6.ความสมดุล<br>
+          </small>
+          <small>
+            5points<br>
+            5points<br>
+            5points<br>
+            5points<br>
+            5points<br>
+            5points<br>
+          </small>
+        
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+  
+      <div class="card px-3 py-2 my-4 " data-aos="fade-up">
+        <p class="text-center h4 m-0" >Most popular art</p> 
+    </div>
+
+
+      <div class="row mx-1">
+       
+        <div class="col-md-4 col-xxl-3"  id="3" data-aos="fade-right">
+          <div class="card mb-4 shadow-sm" >
+            <img src="./krajang/choose/ly-30.png" class="card-img-top modal-image" alt="" id="myImg1" style="width: 100%; height: auto;"> 
+            <div class="card-footer" >
+            <small class="text-body-secondary">ภูษณิศา	นิ่มเจริญดี เลขที่ 3</small>
+          </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-xxl-3"  id="16" data-aos="fade-right">
+          <div class="card mb-4 shadow-sm" >
+            <img src="./krajang/choose/ly-20.png" class="card-img-top modal-image" alt="" id="myImg1" style="width: 100%; height: auto;"> 
+            <div class="card-footer" >
+            <small class="text-body-secondary">วีร์รดา	แก้วกันใจ เลขที่ 16</small>
+          </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-xxl-3"  id="20" data-aos="fade-right">
+          <div class="card mb-4 shadow-sm" >
+            <img src="./krajang/choose/ly-37.png" class="card-img-top modal-image" alt="" id="myImg1" style="width: 100%; height: auto;"> 
+            <div class="card-footer" >
+            <small class="text-body-secondary">นภษภร	ศักดิ์ทอง เลขที่ 20</small>
+          </div>
+          </div>
+        </div>
+
+        
+        <div class="col-md-4 col-xxl-3"  id="14" data-aos="fade-right">
+          <div class="card mb-4 shadow-sm" >
+            <img src="./krajang/choose/ly-38.png" class="card-img-top modal-image" alt="" id="myImg1" style="width: 100%; height: auto;"> 
+            <div class="card-footer" >
+            <small class="text-body-secondary">สิริปรียา	วงค์คำมูล เลขที่ 14</small>
+          </div>
+          </div>
+        </div>
+
+        
+        <div class="col-md-4 col-xxl-3"  id="20" data-aos="fade-right">
+          <div class="card mb-4 shadow-sm" >
+            <img src="./krajang/choose/ly-39.png" class="card-img-top modal-image" alt="" id="myImg1" style="width: 100%; height: auto;"> 
+            <div class="card-footer" >
+            <small class="text-body-secondary">สิปราง	วงศ์สิทธิพิศาล เลขที่ 26</small>
+          </div>
+          </div>
+        </div>
+
+      </div>
+  
+        
+        <div class="card px-3 py-2 my-4 " data-aos="fade-up">
+          <p class="text-center h4 m-0" >Others works</p>
+      </div>
+      
+      <div class="row  mx-1 " id="krajangRow" data-aos="fade-left">
+        <!-- Artworks will be dynamically added here -->
+      </div>
+  
+    </section>
+  
+    <!-- Footer -->
+    
+
+    <footer class="footer py-4" >
+      <div class="container">
+        <span class="">เว็บไซต์นี้จัดทำโดยนักเรียนชั้น ม.3 ห้อง 9</span><br>
+        <a href="https://www.yupparaj.ac.th" target="_blank" class="text-light">โรงเรียนยุพราชวิทยาลัย</ฟ>
+      </div>
+    </footer>
+  
+  
+    <script src="./framework/dist/aos.js"></script>
+    <script src="./framework/boostrap/bootstrap.bundle.js"></script>
+    <script src="krajang.js"></script>
+    <script src="script.js"></script>
+  
+  </body>
+  </html>

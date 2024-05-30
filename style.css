@@ -1,0 +1,199 @@
+@font-face {
+    font-family: "TBM";
+    src: url("./fonts/IBMPlexSansThai-Medium.ttf");
+}
+@font-face {
+    font-family: "Noto";
+    src: url("./fonts/NotoSerif.ttf");
+}
+@font-face {
+    font-family: "Petit";
+    src: url("./fonts/Petit.ttf");
+}
+@font-face {
+    font-family: "kanit";
+    src: url("./fonts/PTSerif-Regular.ttf");
+}
+
+.aos-init[data-aos].aos-animate {
+    transform: unset;
+ }
+
+.carousel-inner {
+    transition: all 0.3s;
+    border-radius: 10px;
+    box-shadow: 2px 2px 30px black;
+    width: 500px;
+}
+
+
+
+/* Custom styles for this template */
+
+html{
+
+    overflow-x: hidden;
+}
+
+body {
+    padding-top: 61px;
+    font-family: "TBM";
+    overflow-x: hidden;   
+    }
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar {
+    background-color: #333;
+    }
+
+/* .navbar-brand,
+.navbar-nav .nav-link {
+    
+    } */
+
+.jumbotron {
+    background: url('https://i2.wp.com/zet.gallery/blog/wp-content/uploads/2016/02/Vicent-Van-Gogh-Starry-Night-Famous-Oil-Paintings-www.shairart.com_.jpg?fit=1280%2C1014') center/cover no-repeat;
+    color: #fff;
+    height: 500px;
+    padding: 0;
+    }
+
+
+.basns{
+    display: flex;
+    left: 50%;
+    align-items: center;
+    transform: translateX(-50%);
+    height: 500px;
+    justify-content: center;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    }
+
+.immage{
+    height: 80%;
+    z-index: 1;
+}
+
+.thatext{
+    width: 481px;
+    text-align: end;
+}
+
+.ft-56{
+    font-size: 46px;
+}
+
+.ft-96{
+    font-size: 86px;
+}
+
+.ft-309{
+    font-size: 60px;
+}
+
+.ft-56, .ft-96, .ft-309{
+    text-shadow:0 0 20px white, 0 0 30px black;
+}
+
+
+@media screen and (max-width: 900px) {
+    .immage{
+        height: 270px;
+        left: 50%;
+    }
+    .basns{
+        flex-wrap: wrap;
+        padding-top: 25px;
+        width: 85%;
+        margin: auto;
+        justify-content: center;
+        gap: 0;
+    }
+    .ft-56{
+        font-size: 30px;
+        margin: 0;
+    }
+    .ft-96{
+        font-size: 50px;
+        margin: 0;
+    }
+
+    .ft-309{
+        font-size: 45px;
+        margin: 0;
+    }
+    .thatext{
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .thatext{
+        text-align: center;
+    }
+}
+
+
+.loader {
+    border: 16px solid #e6e6e6; /* Light grey */
+    border-top: 16px solid #42819e; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1001;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.backler{
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+.loaded .loader, .loaded .backler
+{
+    display: none; /* Hide loader when content is loaded */
+}
+
+
+.no-select {
+    -webkit-user-select: none; /* Disable selection for webkit browsers */
+    -moz-user-select: none; /* Disable selection for mozilla browsers */
+    -ms-user-select: none; /* Disable selection for IE10+ */
+    user-select: none; /* Disable selection for general browsers */
+  }
+
+  /* Disable text dragging */
+  .no-drag {
+    -webkit-user-drag: none; /* Disable dragging for webkit browsers */
+    -khtml-user-drag: none; /* Disable dragging for konqueror */
+    -moz-user-drag: none; /* Disable dragging for mozilla browsers */
+    -o-user-drag: none; /* Disable dragging for opera */
+  }
+
+  
